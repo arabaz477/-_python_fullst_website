@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Haldiram's - Indian Sweets & Snacks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f2;
+    }
+
+    .container {
+      background-color: aliceblue;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      padding: 20px;
+    }
+
+    .header_row1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .img_bar img {
+      height: 80px;
+    }
+
+    .Corprote_bar a {
+      background-color: #7F5B98;
+      padding: 6px 14px;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .product, .location {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      width: 200px;
+    }
+
+    .Icon_bar i {
+      margin: 0 10px;
+      font-size: 22px;
+      color: #444;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .Icon_bar i:hover {
+      transform: scale(1.2);
+    }
+
+    .row2 {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .row2 a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .menu_bar {
+      background-color: rgb(255, 213, 178);
+      padding: 10px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    .img-navigation img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .mainu_bar {
+      padding: 30px 20px;
+    }
+
+    .mainu_bar h2 {
+      color: #333;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .mainu_bar ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      list-style: none;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .mainu_bar ul li {
+      width: 250px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      font-size: 16px;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    .mainu_bar ul li:hover {
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+      transform: translateY(-5px);
+    }
+
+    .mainu_bar ul li img {
+      width: 100%;
+      height: 180px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .btn-cart {
+      margin-top: 10px;
+      padding: 6px 10px;
+      border: none;
+      background-color: #ff704d;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-cart:hover {
+      background-color: #e04b1a;
+    }
+
+    .figercaption img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .container-fluid {
+      background-color: rgb(245, 218, 168);
+      padding: 30px 10px;
+      border-top: 3px solid salmon;
+      text-align: center;
+    }
+
+    .items_tag i {
+      font-size: 18px;
+      color: green;
+           margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .header_row1, .row2, .mainu_bar ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .product> .location {
+        width: 90%;
+      }
+
+      .mainu_bar ul li {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header_row1">
+      <div class="img_bar"><img src="h1.webp" alt="Logo"></div>
+      <div class="Dilevary_bar">Mode<br>Delivery</div>
+      <div class="Corprote_bar">
+        <a href="#">Corporate Orders</a>
+      </div>
+      <input type="text" placeholder="Search product..." id="searchInput" class="location">
+      <div class="Icon_bar">
+        <i class="fa fa-user" title="Profile"></i>
+        <i class="fa fa-heart" title="Wishlist" onclick="addToWishlist()"></i>
+        <i class="fa fa-shopping-bag" title="Cart"></i>
+      </div>
+    </div>
+
+    <div class="row2">
+      <a href="kattli.html">Savouries</a>
+      <a href="kaju.html">Mithai</a>
+      <a href="choklet.html">Bakery & Chocolates</a>
+      <a href="Ready _to _Eat.html">Ready to Eat</a>
+      <a href="Pantry _ Kitchen.html">Pantry & Kitchen</a>
+    </div>
+  </div>
+
+  <div class="menu_bar">
+    <marquee>Get delicious Indian sweets, snacks & more delivered to your home! Celebrating tradition with taste. 🇮🇳</marquee>
+  </div>
+
+  <div class="img-navigation">
+    <img src="h3.webp" alt="Promotional Banner">
+  </div>
+
+  <div class="mainu_bar">
+    <h2>India's Favourites</h2>
+    <p style="text-align: center;">Serving India Its Favourites In Every Way Possible</p>
+    <ul id="productList">
+      <li><img src="h6.webp" alt="Kaju Katli"><br>Kaju Katli - 3 Packs (400g each)<br><button class="btn-cart" onclick="addToCart('Kaju Katli')">Add to Cart</button></li>
+      <li><img src="h7.webp" alt="Kaju Roll"><br>Kaju Roll & Coconut Laddoo<br><button class="btn-cart" onclick="addToCart('Kaju Roll')">Add to Cart</button></li>
+      <li><img src="h8.webp" alt="Patisha"><br>Patisha - Indian Dessert Special<br><button class="btn-cart" onclick="addToCart('Patisha')">Add to Cart</button></li>
+      <li><img src="h9.webp" alt="Minute Khana"><br>Minute Khana - Instant Meals<br><button class="btn-cart" onclick="addToCart('Minute Khana')">Add to Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="figercaption">
+    <img src="hh1.webp" alt="Delivery Promo">
+  </div>
+
+  <div class="container-fluid">
+    <img src="hh2.webp" alt="App Promo" style="width: 200px;"><br><br>
+    <h2 style="color: salmon;">Haldiram's Mobile App Coming Soon!</h2>
+    <div class="items_tag">
+      <i class="fa fa-check-circle"> Delivery Tracking</i><br>
+      <i class="fa fa-check-circle"> Access Full Product Range</i><br>
+      <i class="fa fa-check-circle"> Exclusive Offers & Rewards</i>
+    </div>
+  </div>
+
+  <script>8
+    function addToWishlist() {
+      alert("Added to wishlist!");
+    }
+
+    function addToCart(productName) {
+      alert(productName + " added to cart!");
+    }
+
+    
+    document.getElementById("searchInput").addEventListener("input", function () {
+      let filter = this.value.toLowerCase();
+      let products = document.querySelectorAll("#productList li");
+      products.forEach(function (item) {
+        let text = item.textContent.toLowerCase();
+        item.style.display = text.includes(filter) ? "block" : "none";
+      });
+    });
+  </script>
+
+</body>
+</html>
